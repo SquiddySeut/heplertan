@@ -36,6 +36,9 @@ client.on('message', message => {
 
 
  	}
+    if (message.content.startsWith("im")) {
+    message.channel.send("Hey Dad-bot, please shut up!");
+    }
 
 
 });
