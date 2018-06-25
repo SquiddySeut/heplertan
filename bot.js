@@ -42,6 +42,10 @@ client.on('message', message => {
     if (message.content.startsWith("No you're not,")) {
     message.channel.send("Dad Bot, you need to actually stfu");
     }
+    if (message.content.startsWith("69")) {
+    message.channel.send("nice");
+    }
+
 
 
 });
