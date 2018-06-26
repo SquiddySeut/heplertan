@@ -69,7 +69,10 @@ client.on('message', message => {
     }
     if (message.content === 'testx') {    //new
        save=-1;
-       message.reply("Save reset!");
+       message.reply("Save changed!");
+    }
+    if (message.content === 'displayx') {    //new
+       message.reply("x is currently " + x +"!");
     }
 
     /*if (message.content.startsWith("test")) {
