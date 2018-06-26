@@ -67,6 +67,9 @@ client.on('message', message => {
        message.reply("test");
        if (message.content.startsWith("yes"||"no")) {
           message.reply("success");
+          else {
+             message.channel.send("failure");
+          }
        }
      }
 
