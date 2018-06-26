@@ -61,7 +61,7 @@ client.on('message', message => {
          message.reply(stage01);
          message.reply(quest01);
          x++;
-   }else if (message.content===("left"&&===0)){
+   }else if (message.content===("left"&&x===0)){
       message.reply(stage0l);
       message.reply(gameover);
    }
