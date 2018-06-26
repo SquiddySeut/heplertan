@@ -1,7 +1,7 @@
 
 const Discord = require('discord.js');
 var x = 0; // new
-
+var 0 = "You wake up"
 
 
 const client = new Discord.Client();
@@ -36,6 +36,11 @@ client.on('message', message => {
 
 
  	}
+    if (message.content==='\help'){
+       message.reply("My commands are:");
+       message.channel.send("When will Jacob be on");
+       message.channel.send("ResetSave");
+    }
     if (message.content.startsWith("im")) {
     message.channel.send("Hey Dad-bot, please shut up!");
     }
@@ -63,7 +68,7 @@ client.on('message', message => {
     if (message.content.startsWith("when will jacob be on")) {
     message.reply("He is usually online from 2pm-7pm");   
     }
-    if (message.content === ('resetX')) {    //new
+    if (message.content === ('resetSave')) {    //new
        x=0;
        message.reply("Save reset!");
     }
