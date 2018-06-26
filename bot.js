@@ -48,8 +48,11 @@ client.on('message', message => {
     if (message.content.startsWith("Hi ")) {
     message.channel.send("Dad Bot kys");
     }
-    if (message.content.startsWith("Alright")) {
+    if (message.content.startsWith("Alright ")) {
     message.channel.send("no u");
+    }
+    if (message.content.startsWith("when will jacob be online")) {
+    message.channel.send("He is usually online from 2pm-7pm");   
     }
 
 
