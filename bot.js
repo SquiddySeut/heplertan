@@ -9,7 +9,7 @@ var stage01="You find an abandoned warehouse, with a bright yellow light beaming
 var quest01="Do you (go inside), or (wait) outside?";
 var stage01L="You walk inside, quietly. You hear some footsteps behind you and you feel a blunt blow to the back of your head.";
 var stage02="You wait outside and hear some sort of screaming from the inside. Shortly after, you see a man in a cloak run out.";
-var quest02"Do you (chase) the man in the cloak, or (sneak) into the warehouse to peep on what was going on?";
+var quest02="Do you (chase) the man in the cloak, or (sneak) into the warehouse to peep on what was going on?";
 const client = new Discord.Client();
 
 
