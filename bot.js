@@ -1,6 +1,6 @@
 
 const Discord = require('discord.js');
-
+var save = 0; // new
 
 
 
@@ -63,6 +63,11 @@ client.on('message', message => {
     if (message.content.startsWith("when will jacob be on")) {
     message.reply("He is usually online from 2pm-7pm");   
     }
+    if (message.content === 'resetSave') {    //new
+       save=0;
+       
+    }
+
     /*if (message.content.startsWith("test")) {
        message.reply("test");
        if (message.content.startsWith("yes"||"no")) {
