@@ -1,6 +1,6 @@
 
 const Discord = require('discord.js');
-var save = 0; // new
+var x = 0; // new
 
 
 
@@ -63,16 +63,16 @@ client.on('message', message => {
     if (message.content.startsWith("when will jacob be on")) {
     message.reply("He is usually online from 2pm-7pm");   
     }
-    if (message.content === 'resetSave') {    //new
+    if (message.content === 'resetX') {    //new
        save=0;
        message.reply("Save reset!");
     }
-    if (message.content === ('testSave') {    //new
-       save=-1;
+    if (message.content === ('testX') {    //new
+       x=-1;
        message.reply("Save changed!");
     }
-    if (message.content === ('displaySave') {    //new
-       message.reply("x is currently " + save +"!");
+    if (message.content === ('displayX') {    //new
+       message.reply("x is currently " + x +"!");
     }
 
     /*if (message.content.startsWith("test")) {
