@@ -63,15 +63,15 @@ client.on('message', message => {
     if (message.content.startsWith("when will jacob be on")) {
     message.reply("He is usually online from 2pm-7pm");   
     }
-    if (message.content === 'resetX') {    //new
+    if (message.content === 'resetX')) {    //new
        x=0;
        message.reply("Save reset!");
     }
-    if (message.content === ('testX') {    //new
+    if (message.content === ('testX')) {    //new
        x=-1;
        message.reply("Save changed!");
     }
-    if (message.content === ('displayX') {    //new
+    if (message.content === ('displayX')) {    //new
        message.reply("x is currently " + x +"!");
     }
 
