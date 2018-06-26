@@ -65,7 +65,7 @@ client.on('message', message => {
     }
     if (message.content === 'resetSave') {    //new
        save=0;
-       
+       message.reply("Save reset!");
     }
 
     /*if (message.content.startsWith("test")) {
