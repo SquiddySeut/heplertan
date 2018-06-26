@@ -52,7 +52,7 @@ client.on('message', message => {
     message.channel.send("no u");
     }
     if (message.content.startsWith("when will jacob be online")) {
-    message.channel.send("He is usually online from 2pm-7pm");   
+    message.reply("He is usually online from 2pm-7pm");   
     }
 
 
