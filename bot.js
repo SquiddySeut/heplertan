@@ -36,10 +36,10 @@ client.on('message', message => {
 
 
  	}
-    if (message.content==='\help'){
+    if (message.content==='commandHelp'){
        message.reply("My commands are:");
-       message.channel.send("When will Jacob be on");
-       message.channel.send("ResetSave");
+       message.channel.send("When will Jacob be on?");
+       message.channel.send(" and ResetSave");
     }
     if (message.content.startsWith("im")) {
     message.channel.send("Hey Dad-bot, please shut up!");
