@@ -1,7 +1,8 @@
 
 const Discord = require('discord.js');
 var x = 0; // new
-var stage0 = "You wake up";
+var stage0 = "You wake up in a lush forest. It's in the middle of the night and you notice a light somewhere in the distance to your right.";
+var quest0 = "Do you go Left or Right?";
 
 
 const client = new Discord.Client();
@@ -36,6 +37,18 @@ client.on('message', message => {
 
 
  	}
+   if (message.content==='gameStart'){
+      if (x==0){
+         message.reply(stage0);
+         message.reply(quest0);
+      }
+   }
+   
+   
+   
+   
+   
+   
     if (message.content==='commandHelp'){
        message.reply("My commands are:");
        message.channel.send("When will Jacob be on?");
