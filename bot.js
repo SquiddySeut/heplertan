@@ -67,11 +67,11 @@ client.on('message', message => {
        save=0;
        message.reply("Save reset!");
     }
-    if (message.content === 'testx') {    //new
+    if (message.content === ('testx') {    //new
        save=-1;
        message.reply("Save changed!");
     }
-    if (message.content === 'displayx') {    //new
+    if (message.content === ('displayx') {    //new
        message.reply("x is currently " + x +"!");
     }
 
