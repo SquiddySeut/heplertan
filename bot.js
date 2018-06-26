@@ -63,7 +63,7 @@ client.on('message', message => {
     if (message.content.startsWith("when will jacob be online")) {
     message.reply("He is usually online from 2pm-7pm");   
     }
-    if (message.content.startsWith("test")) {
+    /*if (message.content.startsWith("test")) {
        message.reply("test");
        if (message.content.startsWith("yes"||"no")) {
           message.reply("success");
@@ -72,7 +72,7 @@ client.on('message', message => {
           }
        }
      }
-
+*/
 
 
 
