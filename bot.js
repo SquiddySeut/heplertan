@@ -51,6 +51,15 @@ client.on('message', message => {
     if (message.content.startsWith("Alright ")) {
     message.channel.send("no u");
     }
+    if (message.content.startsWith("When will jacob be online")) {
+    message.reply("He is usually online from 2pm-7pm");   
+    }
+    if (message.content.startsWith("When will jacob be online")) {
+    message.reply("He is usually online from 2pm-7pm");   
+    }
+    if (message.content.startsWith("when will Jacob be online")) {
+    message.reply("He is usually online from 2pm-7pm");   
+    }
     if (message.content.startsWith("when will jacob be online")) {
     message.reply("He is usually online from 2pm-7pm");   
     }
