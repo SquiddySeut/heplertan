@@ -1,7 +1,7 @@
 
 const Discord = require('discord.js');
 var x = 0; // new
-var 0 = "You wake up"
+var stage0 = "You wake up"
 
 
 const client = new Discord.Client();
