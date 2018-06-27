@@ -49,10 +49,12 @@ client.on('message', message => {
 
 
  	}
-   
+   if (message.content==="resetH"){
+      health=100;
+   }
    
    if (message.content==="testH"){//test health
-      health=100;
+      //health=100;
       //message.reply(health=health-getRandomInt(10));
       damageTook=getRandomInt(10);
      
