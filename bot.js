@@ -57,7 +57,7 @@ client.on('message', message => {
       damageTook=getRandomInt(10);
      
       message.reply("took "+damageTook+" damage");
-      message.reply("Health remaining: "+health=health-damageTook);
+      message.reply("Health remaining: " +(health=health-damageTook));
    }
    if (message.content==="deleteSave"){//delete save
       message.reply("which save?");
