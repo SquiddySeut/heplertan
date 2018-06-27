@@ -47,19 +47,19 @@ if (message.content==="squid"&&delet===1){
          message.reply("delete confirmed");
       }
       if (message.content==="hugh"&&delet===1){
-         squid=0;
+         hugh=0;
          x=0;
          delet=0;
          message.reply("delete confirmed");
       }
       if (message.content==="mafu"&&delet===1){
-         squid=x;
+         mafu=x;
          x=0;
          delet=0;
          message.reply("delete confirmed");
       }
       if (message.content==="kono"&&delet===1){
-         squid=x;
+         kono=x;
          x=0;
          delet=0;
          message.reply("delete confirmed");
