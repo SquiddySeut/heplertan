@@ -122,19 +122,19 @@ client.on('message', message => {
       
    }
    if (message.content==="gameStart"&&x!=-1){
-      if (x==0){
+      if (x===0){
          message.reply(stage0);
          message.reply(quest0);
       }
-      if (x==01){
+      if (x===01){
          message.reply(stage01);
          message.reply(quest01);
       }
-      if (x==02){
+      if (x===02){
          message.reply(stage02);
          message.reply(quest02);
       }
-      if (x==03){
+      if (x===03){
          message.reply(stage03);
          message.reply(quest03);
       }
