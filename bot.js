@@ -12,7 +12,11 @@ var stage02="You wait outside and hear some sort of screaming from the inside. S
 var quest02="Do you (chase) the man in the cloak, or (sneak) into the warehouse to peep on what was going on?";
 const client = new Discord.Client();
 
-
+var squid = 0;
+var hugh=0;
+var mafu=0;
+var kono=0;
+var save5=0;
 
 
 
@@ -42,7 +46,32 @@ client.on('message', message => {
 
 
  	}
+   if (message.content==="gameSave"){//game saving NEW
+      message.reply("which save file?");
+      if (message.content==="squid"){
+         squid=x;
+         x=0;
+      }
+      if (message.content==="hugh"){
+         squid=x;
+         x=0;
+      }
+      if (message.content==="mafu"){
+         squid=x;
+         x=0;
+      }
+      if (message.content==="kono"){
+         squid=x;
+         x=0;
+      }
+      if (message.content==="save5"){
+         save5=x;
+         x=0;
+      }
+   }
    if (message.content==='gameStart'){//game startup
+      message.reply("give me your save code so I can resume your game!");
+      //copy save here
       if (x==0){
          message.reply(stage0);
          message.reply(quest0);
@@ -122,15 +151,15 @@ client.on('message', message => {
     if (message.content.startsWith("when will jacob be on")) {
     message.reply("He is usually online from 2pm-7pm");   
     }
-    if (message.content === ('resetSave')) {    //new
+    if (message.content === ('resetSave')) {    //
        x=0;
        message.reply("Save reset!");
     }
-    if (message.content === ('testX')) {    //new
+    if (message.content === ('testX')) {    //
        x=-1;
        message.reply("Save changed!");
     }
-    if (message.content === ('displayX')) {    //new
+    if (message.content === ('displayX')) {    //
        message.reply("x is currently " + x +"!");
     }
 
