@@ -20,8 +20,8 @@ var save5;
 var save;
 var load;
 var delet;
-
-
+var damage;
+var health;
 
 
 
@@ -48,11 +48,14 @@ client.on('message', message => {
 
 
  	}
-   if (message.content==="deleteSave"){
+   if (message.content==="deleteSave"){//delete save
       message.reply("which save?");
       delet=1;
    }
-if (message.content==="squid"&&delet===1){
+   
+   
+   
+if (message.content==="squid"&&delet===1){//delete save process
          squid=0;
          x=0;
          delet=0;
@@ -87,7 +90,9 @@ if (message.content==="squid"&&delet===1){
       save=1;
       
    }
-   if (message.content==="squid"&&save===1){
+   if (damage===1){
+      message.reply(health-Math.floor(Math.random()*10)+1;
+   if (message.content==="squid"&&save===1){//save procces
          squid=x;
          x=0;
          save=0;
@@ -126,6 +131,7 @@ if (message.content==="squid"&&delet===1){
       if (x===0){
          message.reply(stage0);
          message.reply(quest0);
+         health=100;
       }
       if (x===01){
          message.reply(stage01);
