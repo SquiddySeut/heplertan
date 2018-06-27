@@ -53,7 +53,9 @@ client.on('message', message => {
    if (message.content==="gameSave"){//game saving NEW
       message.reply("which save file?");
       save=1;
-      if (message.content==="squid"&&save===1){
+      
+   }
+   if (message.content==="squid"&&save===1){
          squid=x;
          x=0;
          save=0;
@@ -78,10 +80,28 @@ client.on('message', message => {
          x=0;
          save=0;
       }
-   }
    if (message.content==='gameStart'&&x===-1){//game startup
       message.reply("give me your save code so I can resume your game!");
-      if (message.content==="squid"&&load===1){
+      load=1;
+      
+      if (x==0){
+         message.reply(stage0);
+         message.reply(quest0);
+      }
+      if (x==01){
+         message.reply(stage01);
+         message.reply(quest01);
+      }
+      if (x==02){
+         message.reply(stage02);
+         message.reply(quest02);
+      }
+      if (x==03){
+         message.reply(stage03);
+         message.reply(quest03);
+      }
+   }
+   if (message.content==="squid"&&load===1){
          squid=x;
          load=0;
       } if (message.content==="hugh"&&load===1){
@@ -100,24 +120,6 @@ client.on('message', message => {
          x=0;
          load=0;
       }
-   
-      if (x==0){
-         message.reply(stage0);
-         message.reply(quest0);
-      }
-      if (x==01){
-         message.reply(stage01);
-         message.reply(quest01);
-      }
-      if (x==02){
-         message.reply(stage02);
-         message.reply(quest02);
-      }
-      if (x==03){
-         message.reply(stage03);
-         message.reply(quest03);
-      }
-   }
    if (message.content==="right"&&x===0){//stage0 results
          message.reply(stage01);
          message.reply(quest01);
