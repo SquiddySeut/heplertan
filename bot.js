@@ -11,7 +11,7 @@ var stage01L="You walk inside, quietly. You hear some footsteps behind you and y
 var stage02="You wait outside and hear some sort of screaming from the inside. Shortly after, you see a man in a cloak run out.";
 var quest02="Do you (chase) the man in the cloak, or (sneak) into the warehouse to peep on what was going on?";
 
-function overPack{
+function overPack(){
   message.reply(gameOver);
   message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
 }
