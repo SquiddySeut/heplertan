@@ -1,6 +1,6 @@
 
 const Discord = require('discord.js');
-var x = 0; // new
+var x = -1; // new
 var stage0 = "You wake up in a lush forest. It's in the middle of the night and you notice a light somewhere in the distance to your right.";
 var quest0 = "Do you go (left) to go deeper into the dark forest or (right) towards the light?";
 var stage0L="You head deeper into the woods. You can't see anything, and suddenly, you have a searing pain in your chest.";
@@ -19,6 +19,9 @@ var kono=0;
 var save5=0;
 var save=0
 var load=0
+load=0;
+save=0;
+
 
 
 
