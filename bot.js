@@ -47,10 +47,10 @@ client.on('message', message => {
 
       message.reply('pong');
 
-
- 	}
+   }
    if (message.content==="resetH"){
       health=100;
+      message.reply("Healed you back to 100 HP!");
    }
    
    if (message.content==="testH"){//test health
