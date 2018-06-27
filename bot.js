@@ -53,10 +53,11 @@ client.on('message', message => {
    
    if (message.content==="testH"){//test health
       heath=100;
-      message.reply(health=health-getRandomInt(10));
-                    //damageTook=getRandomInt(10);
-                    //message.reply("took "+damageTook+" damage");
-                    //health=health-damageTook;
+      //message.reply(health=health-getRandomInt(10));
+      damageTook=getRandomInt(10);
+     
+      message.reply("took "+damageTook+" damage");
+      message.reply("Health remaining: "+health=health-damageTook);
    }
    if (message.content==="deleteSave"){//delete save
       message.reply("which save?");
