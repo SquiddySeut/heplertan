@@ -48,6 +48,7 @@ client.on('message', message => {
  	}
    if (message.content==="gameSave"){//game saving NEW
       message.reply("which save file?");
+      
       if (message.content==="squid"){
          squid=x;
          x=0;
@@ -71,7 +72,26 @@ client.on('message', message => {
    }
    if (message.content==='gameStart'){//game startup
       message.reply("give me your save code so I can resume your game!");
-      //copy save here
+      if (message.content==="squid"){
+         squid=x;
+         x=0;
+      }else if (message.content==="hugh"){
+         squid=x;
+         x=0;
+      }else
+      if (message.content==="mafu"){
+         squid=x;
+         x=0;
+      }else if (message.content==="kono"){
+         squid=x;
+         x=0;
+      }else if (message.content==="save5"){
+         save5=x;
+         x=0;
+      }else{
+         x=0;
+      }
+   }
       if (x==0){
          message.reply(stage0);
          message.reply(quest0);
