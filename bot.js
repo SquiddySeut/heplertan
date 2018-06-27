@@ -17,7 +17,8 @@ var hugh=0;
 var mafu=0;
 var kono=0;
 var save5=0;
-
+var save=0
+var load=0
 
 
 
@@ -48,45 +49,53 @@ client.on('message', message => {
  	}
    if (message.content==="gameSave"){//game saving NEW
       message.reply("which save file?");
-      
-      if (message.content==="squid"){
+      save=1;
+      if (message.content==="squid"&&save===1){
          squid=x;
          x=0;
+         save=0;
       }
-      if (message.content==="hugh"){
+      if (message.content==="hugh"&&save===1){
          squid=x;
          x=0;
+         save=0;
       }
-      if (message.content==="mafu"){
+      if (message.content==="mafu"&&save===1){
          squid=x;
          x=0;
+         save=0;
       }
-      if (message.content==="kono"){
+      if (message.content==="kono"&&save===1){
          squid=x;
          x=0;
+         save=0;
       }
-      if (message.content==="save5"){
+      if (message.content==="save5"&&save===1){
          save5=x;
          x=0;
+         save=0;
       }
    }
    if (message.content==='gameStart'&&x===-1){//game startup
       message.reply("give me your save code so I can resume your game!");
-      if (message.content==="squid"){
+      if (message.content==="squid"&&load===1){
          squid=x;
-         
-      }else if (message.content==="hugh"){
+         load=0;
+      } if (message.content==="hugh"&&load===1){
          x=hugh;
-         
-      }else if (message.content==="mafu"){
+         load=0;
+      } if (message.content==="mafu"&&load===1){
          x=mafu;
          x=0;
-      }else if (message.content==="kono"){
+      } if (message.content==="kono"&&load===1){
          x=kono;
-         
-      }else if (message.content==="save5"){
+         load=0;
+      } if (message.content==="save5"&&load===1){
          x=save5;
-         
+         load=0;
+      }else {
+         x=0;
+         load=0;
       }
    
       if (x==0){
