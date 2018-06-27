@@ -91,7 +91,7 @@ client.on('message', message => {
       }else{
          x=0;
       }
-   }
+   
       if (x==0){
          message.reply(stage0);
          message.reply(quest0);
