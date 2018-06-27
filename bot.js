@@ -12,8 +12,7 @@ var stage02="You wait outside and hear some sort of screaming from the inside. S
 var quest02="Do you (chase) the man in the cloak, or (sneak) into the warehouse to peep on what was going on?";
 
 function overPack(){
-  message.reply(gameOver);
-  message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
+  
 }
 
 
@@ -203,7 +202,8 @@ if (message.content==="squid"&&delet===1){//delete save process
    }
    if (message.content==="left"&&x===0){
       message.reply(stage0L);
-      overPack();
+      message.reply(gameOver);
+      message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
    }
    if (message.content==="wait"&&x===1){//stage01 results
          message.reply(stage02);
@@ -212,7 +212,8 @@ if (message.content==="squid"&&delet===1){//delete save process
    }
    if (message.content==="go inside"&&x===1){
          message.reply(stage01L);
-         overPack();
+         message.reply(gameOver);
+         message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
          x=0;
    }
    
