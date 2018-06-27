@@ -40,14 +40,18 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-
    if (message.content === 'ping') {
 
 
-   	message.reply('pong');
+      message.reply('pong');
 
 
  	}
+   
+   
+   if (message.content==="testH"){
+      message.reply(health=health-Math.floor(Math.random()*10)+1);
+   }
    if (message.content==="deleteSave"){//delete save
       message.reply("which save?");
       delet=1;
