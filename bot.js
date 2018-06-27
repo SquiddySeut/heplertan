@@ -118,31 +118,31 @@ if (message.content==="squid"&&delet===1){//delete save process
    }
    if (message.content==="squid"&&save===1){//save procces
          squid=x;
-         x=0;
+         x=-1;
          save=0;
          message.reply("save confirmed");
       }
       if (message.content==="hugh"&&save===1){
          hugh=x;
-         x=0;
+         x=-1;
          save=0;
          message.reply("save confirmed");
       }
       if (message.content==="mafu"&&save===1){
          mafu=x;
-         x=0;
+         x=-1;
          save=0;
          message.reply("save confirmed");
       }
       if (message.content==="kono"&&save===1){
          kono=x;
-         x=0;
+         x=-1;
          save=0;
          message.reply("save confirmed");
       }
       if (message.content==="save5"&&save===1){
          save5=x;
-         x=0;
+         x=-1;
          message.reply("save confirmed");
       }
    if (message.content==='gameStart'&&x===-1){//game startup
