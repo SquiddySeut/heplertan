@@ -194,6 +194,7 @@ if (message.content==="squid"&&delet===1){//delete save process
       } if (message.content==="new") {
          x=0;
          load=0;
+        message.reply("New game starting. Type gameStart to continue");
       }
    if (message.content==="right"&&x===0){//stage0 results
          message.reply(stage01);
@@ -202,7 +203,7 @@ if (message.content==="squid"&&delet===1){//delete save process
    }
    if (message.content==="left"&&x===0){
       message.reply(stage0L);
-      message.reply(overPack);
+      overpack();
    }
    if (message.content==="wait"&&x===1){//stage01 results
          message.reply(stage02);
@@ -211,7 +212,7 @@ if (message.content==="squid"&&delet===1){//delete save process
    }
    if (message.content==="go inside"&&x===1){
          message.reply(stage01L);
-         message.reply(overPack);
+         overpack();
          x=0;
    }
    
