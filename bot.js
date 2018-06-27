@@ -96,7 +96,7 @@ client.on('message', message => {
       } if (message.content==="save5"&&load===1){
          x=save5;
          load=0;
-      }else {
+      } if (message.content==="new") {
          x=0;
          load=0;
       }
