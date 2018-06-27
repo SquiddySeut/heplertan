@@ -59,26 +59,30 @@ client.on('message', message => {
          squid=x;
          x=0;
          save=0;
+         message.reply("save confirmed");
       }
       if (message.content==="hugh"&&save===1){
          squid=x;
          x=0;
          save=0;
+         message.reply("save confirmed");
       }
       if (message.content==="mafu"&&save===1){
          squid=x;
          x=0;
          save=0;
+         message.reply("save confirmed");
       }
       if (message.content==="kono"&&save===1){
          squid=x;
          x=0;
          save=0;
+         message.reply("save confirmed");
       }
       if (message.content==="save5"&&save===1){
          save5=x;
          x=0;
-         save=0;
+         message.reply("save confirmed");
       }
    if (message.content==='gameStart'&&x===-1){//game startup
       message.reply("give me your save code so I can resume your game!");
@@ -104,18 +108,23 @@ client.on('message', message => {
    if (message.content==="squid"&&load===1){
          squid=x;
          load=0;
+         message.reply("load confirmed");
       } if (message.content==="hugh"&&load===1){
          x=hugh;
          load=0;
+         message.reply("load confirmed");
       } if (message.content==="mafu"&&load===1){
          x=mafu;
          x=0;
+         message.reply("load confirmed");
       } if (message.content==="kono"&&load===1){
          x=kono;
          load=0;
+         message.reply("load confirmed");
       } if (message.content==="save5"&&load===1){
          x=save5;
          load=0;
+         message.reply("load confirmed");
       } if (message.content==="new") {
          x=0;
          load=0;
