@@ -53,7 +53,7 @@ client.on('message', message => {
    
    if (message.content==="testH"){//test health
       heath=100;
-      message.reply(health=getRandomInt(10);
+      message.reply(health=getRandomInt(10));
                     //damageTook=getRandomInt(10);
                     //message.reply("took "+damageTook+" damage");
                     //health=health-damageTook;
