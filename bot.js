@@ -109,7 +109,7 @@ client.on('message', message => {
       }
    }
    if (message.content==="squid"&&load===1){
-         squid=x;
+         x=squid;
          load=0;
          message.reply("load confirmed");
       } if (message.content==="hugh"&&load===1){
