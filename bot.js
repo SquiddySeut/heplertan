@@ -74,22 +74,19 @@ client.on('message', message => {
       message.reply("give me your save code so I can resume your game!");
       if (message.content==="squid"){
          squid=x;
-         x=0;
+         
       }else if (message.content==="hugh"){
-         squid=x;
-         x=0;
-      }else
-      if (message.content==="mafu"){
-         squid=x;
+         x=hugh;
+         
+      }else if (message.content==="mafu"){
+         x=mafu;
          x=0;
       }else if (message.content==="kono"){
-         squid=x;
-         x=0;
+         x=kono;
+         
       }else if (message.content==="save5"){
-         save5=x;
-         x=0;
-      }else{
-         x=0;
+         x=save5;
+         
       }
    
       if (x==0){
