@@ -19,8 +19,7 @@ var kono;
 var save5;
 var save;
 var load;
-load;
-save;
+var delet;
 
 
 
@@ -37,8 +36,40 @@ client.on('ready', () => {
 
 
 
-
-
+   if (message.content==="deleteSave"){
+      message.reply("which save?");
+      delet=1;
+   }
+if (message.content==="squid"&&delet===1){
+         squid=0;
+         x=0;
+         delet=0;
+         message.reply("delete confirmed");
+      }
+      if (message.content==="hugh"&&delet===1){
+         squid=0;
+         x=0;
+         delet=0;
+         message.reply("delete confirmed");
+      }
+      if (message.content==="mafu"&&delet===1){
+         squid=x;
+         x=0;
+         delet=0;
+         message.reply("delete confirmed");
+      }
+      if (message.content==="kono"&&delet===1){
+         squid=x;
+         x=0;
+         delet=0;
+         message.reply("delete confirmed");
+      }
+      if (message.content==="save5"&&delet===1){
+         save5=x;
+         x=0;
+         delet=0;
+         message.reply("delete confirmed");
+      }
 
 client.on('message', message => {
 
@@ -62,19 +93,19 @@ client.on('message', message => {
          message.reply("save confirmed");
       }
       if (message.content==="hugh"&&save===1){
-         squid=x;
+         hugh=x;
          x=0;
          save=0;
          message.reply("save confirmed");
       }
       if (message.content==="mafu"&&save===1){
-         squid=x;
+         mafu=x;
          x=0;
          save=0;
          message.reply("save confirmed");
       }
       if (message.content==="kono"&&save===1){
-         squid=x;
+         kono=x;
          x=0;
          save=0;
          message.reply("save confirmed");
