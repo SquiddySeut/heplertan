@@ -22,7 +22,9 @@ var load;
 var delet;
 var damage;
 var health;
-
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
 
 
 client.on('ready', () => {
@@ -49,9 +51,12 @@ client.on('message', message => {
  	}
    
    
-   if (message.content==="testH"){
+   if (message.content==="testH"){//test health
       heath=100;
-      message.reply(health=health-Math.floor(Math.random()*10)+1);
+      message.reply(health=getRandomInt(10);
+                    //damageTook=getRandomInt(10);
+                    //message.reply("took "+damageTook+" damage");
+                    //health=health-damageTook;
    }
    if (message.content==="deleteSave"){//delete save
       message.reply("which save?");
