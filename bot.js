@@ -90,7 +90,7 @@ client.on('message', message => {
       
       
    }
-   if message.content==="gameStart"&&x!===-1){
+   if (message.content==="gameStart"&&x!=-1){
       if (x==0){
          message.reply(stage0);
          message.reply(quest0);
