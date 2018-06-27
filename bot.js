@@ -4,7 +4,7 @@ var x; // new
 var stage0 = "You wake up in a lush forest. It's in the middle of the night and you notice a light somewhere in the distance to your right.";
 var quest0 = "Do you go (left) to go deeper into the dark forest or (right) towards the light?";
 var stage0L="You head deeper into the woods. You can't see anything, and suddenly, a spear protrudes from your chest.";
-var gameover="You fall down, writhing in pain. You have died";
+var gameOver="You fall down, writhing in pain. You have died";
 var stage01="You find an abandoned warehouse, with a bright yellow light beaming from within";
 var quest01="Do you (go inside), or (wait) outside?";
 var stage01L="You walk inside, quietly. You hear some footsteps behind you and you feel a blunt blow to the back of your head.";
