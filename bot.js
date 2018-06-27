@@ -37,7 +37,6 @@ client.on('ready', () => {
 
 
 
-
    
 
 client.on('message', message => {
@@ -48,7 +47,38 @@ client.on('message', message => {
       message.reply('pong');
 
    }
-   if (message.content==="resetH"){
+  if(message.content==="ascii"){
+   message.channel.send("                                      ,;;;");
+   message.channel.send("                                    .;;||:.");
+   message.channel.send("                                    :;;|||::");
+   message.channel.send("                                  ,;;;;;||::.");
+   message.channel.send("                                 ,;;;;;||||||:.");
+   message.channel.send("                                ,;;;;|||||||||||.");
+   message.channel.send("                               ,;;;||!!!!!!!|||||.");
+   message.channel.send("                              ,;;;;|!!!!!!!!!|||||");
+   message.channel.send("                              ;;;;!!!!!!!!!!!!|||||");
+   message.channel.send("                             |;;;;;/~\!!!,'~\!!||||");
+   message.channel.send("                            :;;;;;|   |!!|   |!!|||");
+   message.channel.send("                            :;;;;;;-._;!!`._/!!!!|`.");
+   message.channel.send("                            |;;;;;;|||!!;;;!!||!!|||");
+   message.channel.send("       ____                  |;;;;;|||!!;;;|||!!||,'");
+   message.channel.send("     ,- _ _`,                 |;;;|||!!!;;|||!!||/ ~-.__");
+   message.channel.send("   /'/~; ; ; )             _--`;;;|||!!!;;|||!!,'    __.--.\ ");
+   message.channel.send("  | ( .---~~--._       _.-~:   `:;|||!!;;;|||/'  .-~~      `.\ ");
+   message.channel.send("  `. ((.;~---._ `-.  ,'     :    `:|!!;;;;/'    ;            :|.");
+   message.channel.send("   : ((;##### `-. :,'       :      |!!;;;/    .'  __         ;||");
+   message.channel.send("    :   #####| `;  `-._     :      ||!!;/    .' .'          ,:||");
+   message.channel.send("     |   ###  | `.     `-._:       `!!!:     :              ';||");
+   message.channel.send("     |   ###   .  `-.      `-._____.----'~~~`'`.           '| |");
+   message.channel.send("    |    ###   :    `.                         ;          .' ||");
+   message.channel.send("   |    ###   ;     `._                                .' |||");
+   message.channel.send("    |    ###  |     ,-' `-._         _                 /  ||||");
+   message.channel.send("     |   ###     ,-'    |   `-._      `-.            ,'  |||:|");
+   message.channel.send("     |   ###   ,'       |       `-.___   `.       _/    |||:::|");
+  }
+
+  
+   if (message.content==="resetH"){//heal
       health=100;
       message.reply("Healed you back to 100 HP!");
    }
