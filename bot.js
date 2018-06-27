@@ -50,6 +50,7 @@ client.on('message', message => {
    
    
    if (message.content==="testH"){
+      heath=100;
       message.reply(health=health-Math.floor(Math.random()*10)+1);
    }
    if (message.content==="deleteSave"){//delete save
