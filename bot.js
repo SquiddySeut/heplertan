@@ -36,6 +36,18 @@ client.on('ready', () => {
 
 
 
+   
+
+client.on('message', message => {
+
+
+   if (message.content === 'ping') {
+
+
+   	message.reply('pong');
+
+
+ 	}
    if (message.content==="deleteSave"){
       message.reply("which save?");
       delet=1;
@@ -70,17 +82,6 @@ if (message.content==="squid"&&delet===1){
          delet=0;
          message.reply("delete confirmed");
       }
-
-client.on('message', message => {
-
-
-   if (message.content === 'ping') {
-
-
-   	message.reply('pong');
-
-
- 	}
    if (message.content==="gameSave"){//game saving NEW
       message.reply("which save file?");
       save=1;
