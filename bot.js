@@ -3,13 +3,20 @@ const Discord = require('discord.js');
 var x; // new
 var stage0 = "You wake up in a lush forest. It's in the middle of the night and you notice a light somewhere in the distance to your right.";
 var quest0 = "Do you go (left) to go deeper into the dark forest or (right) towards the light?";
-var stage0L="You head deeper into the woods. You can't see anything, and suddenly, you have a searing pain in your chest.";
+var stage0L="You head deeper into the woods. You can't see anything, and suddenly, a spear protrudes from your chest.";
 var gameover="You fall down, writhing in pain. You have died";
 var stage01="You find an abandoned warehouse, with a bright yellow light beaming from within";
 var quest01="Do you (go inside), or (wait) outside?";
 var stage01L="You walk inside, quietly. You hear some footsteps behind you and you feel a blunt blow to the back of your head.";
 var stage02="You wait outside and hear some sort of screaming from the inside. Shortly after, you see a man in a cloak run out.";
 var quest02="Do you (chase) the man in the cloak, or (sneak) into the warehouse to peep on what was going on?";
+
+function overPack{
+  message.reply(gameOver);
+  message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
+}
+
+
 const client = new Discord.Client();
 
 var squid;
@@ -25,6 +32,7 @@ var health;
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
+var turn;
 
 
 client.on('ready', () => {
@@ -47,36 +55,7 @@ client.on('message', message => {
       message.reply('pong');
 
    }
-  if(message.content==="ascii"){
-   message.channel.send("                                      ,;;;");
-   message.channel.send("                                    .;;||:.");
-   message.channel.send("                                    :;;|||::");
-   message.channel.send("                                  ,;;;;;||::.");
-   message.channel.send("                                 ,;;;;;||||||:.");
-   message.channel.send("                                ,;;;;|||||||||||.");
-   message.channel.send("                               ,;;;||!!!!!!!|||||.");
-   message.channel.send("                              ,;;;;|!!!!!!!!!|||||");
-   message.channel.send("                              ;;;;!!!!!!!!!!!!|||||");
-   message.channel.send("                             |;;;;;/~\!!!,'~\!!||||");
-   message.channel.send("                            :;;;;;|   |!!|   |!!|||");
-   message.channel.send("                            :;;;;;;-._;!!`._/!!!!|`.");
-   message.channel.send("                            |;;;;;;|||!!;;;!!||!!|||");
-   message.channel.send("       ____                  |;;;;;|||!!;;;|||!!||,'");
-   message.channel.send("     ,- _ _`,                 |;;;|||!!!;;|||!!||/ ~-.__");
-   message.channel.send("   /'/~; ; ; )             _--`;;;|||!!!;;|||!!,'    __.--.\ ");
-   message.channel.send("  | ( .---~~--._       _.-~:   `:;|||!!;;;|||/'  .-~~      `.\ ");
-   message.channel.send("  `. ((.;~---._ `-.  ,'     :    `:|!!;;;;/'    ;            :|.");
-   message.channel.send("   : ((;##### `-. :,'       :      |!!;;;/    .'  __         ;||");
-   message.channel.send("    :   #####| `;  `-._     :      ||!!;/    .' .'          ,:||");
-   message.channel.send("     |   ###  | `.     `-._:       `!!!:     :              ';||");
-   message.channel.send("     |   ###   .  `-.      `-._____.----'~~~`'`.           '| |");
-   message.channel.send("    |    ###   :    `.                         ;          .' ||");
-   message.channel.send("   |    ###   ;     `._                                .' |||");
-   message.channel.send("    |    ###  |     ,-' `-._         _                 /  ||||");
-   message.channel.send("     |   ###     ,-'    |   `-._      `-.            ,'  |||:|");
-   message.channel.send("     |   ###   ,'       |       `-.___   `.       _/    |||:::|");
-  }
-
+  
   
    if (message.content==="resetH"){//heal
       health=100;
@@ -223,7 +202,7 @@ if (message.content==="squid"&&delet===1){//delete save process
    }
    if (message.content==="left"&&x===0){
       message.reply(stage0L);
-      message.reply(gameover);
+      message.reply(overPack);
    }
    if (message.content==="wait"&&x===1){//stage01 results
          message.reply(stage02);
@@ -232,7 +211,7 @@ if (message.content==="squid"&&delet===1){//delete save process
    }
    if (message.content==="go inside"&&x===1){
          message.reply(stage01L);
-         message.reply(gameover);
+         message.reply(overPack);
          x=0;
    }
    
