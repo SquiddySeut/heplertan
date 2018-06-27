@@ -70,7 +70,7 @@ client.on('message', message => {
          x=0;
       }
    }
-   if (message.content==='gameStart'){//game startup
+   if (message.content==='gameStart'&&x===-1){//game startup
       message.reply("give me your save code so I can resume your game!");
       if (message.content==="squid"){
          squid=x;
