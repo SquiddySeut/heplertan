@@ -9,10 +9,17 @@ var stage01="You find an abandoned warehouse, with a bright yellow light beaming
 var quest01="Do you (go inside), or (wait) outside?";
 var stage01L="You walk inside, quietly. You hear some footsteps behind you and you feel a blunt blow to the back of your head.";
 var stage02="You wait outside and hear some sort of screaming from the inside. Shortly after, you see a man in a cloak run out.";
-var quest02="Do you (chase) the man in the cloak, or (sneak) into the warehouse to peep on what was going on?";
+var quest02="Do you (chase) after the man in the cloak, or (sneak) into the warehouse to peep on what was going on?";
+var stage02L="You chase after him, but you soon lose him in the dense forest. You have no idea where you are. Suddenly, a bright light appears behind you and you are engulfed in flames";
+var stage03="You sneak in quietly.
 
-
-
+//weapons
+var fist=3;
+var stick=5;
+var sword=10;
+var spellbook=20;
+var weapon;
+var dmg;
 
 const client = new Discord.Client();
 
@@ -203,6 +210,10 @@ if (message.content==="squid"&&delet===1){//delete save process
       message.reply(gameOver);
       //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
    }
+   if (message.content==="stick"&&x===0){
+      message.reply("You break a branch off of a tree");
+      message.reply("Your max dmg is increase by two (5)");
+      message.reply(quest0);
    if (message.content==="wait"&&x===1){//stage01 results
          message.reply(stage02);
          message.reply(quest02);
