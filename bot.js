@@ -289,12 +289,13 @@ if (message.content==="squid"&&delet===1){//delete save process
          message.reply("attack|defend|health pot");
          ans++;                   
    }        
+   */
       if (health<=0){//gameover combat
        x=-1;
      message.display(gameOver);
      dmg=3;
   }
-  */
+  
   if (enemyH<=0){
     message.display("Enemy was defeated");
   }
