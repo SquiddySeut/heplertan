@@ -228,17 +228,17 @@ if (message.content==="squid"&&delet===1){//delete save process
         //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
          x=0;
    }
-   if (message.content.startsWith==="chase"&&x===2){//stage2 results
+   if (message.content==="chase"&&x===2){//stage2 results
          message.reply(stage02L);
          message.reply(gameOver);
         //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
          x=0;
    }
-   if (message.content.startsWith==="sneak"&&x===3){
+   if (message.content==="sneak"&&x===2){
          message.reply(stage03);
          message.reply(quest03);
         //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
-         x=0;
+         x++;
    }
          
          
