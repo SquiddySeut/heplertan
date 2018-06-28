@@ -17,9 +17,10 @@ var stage04="You follow her into the village. You see multiple people begging. T
 var stage03R="You refuse her and leave the warehouse. In the forest, a blue gleaming light appears. You follow it. Suddenly, blood starts gushing out of your mouth.";
 var quest04="You challenge the mage. Before he accepts, the woman you rescued gave you a one-time-use charm. What does it do?";
 var pTurn;
-
-
-
+var enemyH
+var defX;
+var dmgG;
+var ans;
 
 //battles
 var battle=" challenges you!";
@@ -258,7 +259,9 @@ if (message.content==="squid"&&delet===1){//delete save process
          message.reply(quest04);
         //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
          x++;
+     ans=0;
      pTurn=1;
+     enemyH=50;
    }      
    if (message.content==="refuse"&&x===3){
          message.reply(stage03R);
@@ -266,13 +269,23 @@ if (message.content==="squid"&&delet===1){//delete save process
         //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
          x=0;
    }      
-   if (x===4&&pTurn===1){
-         message.reply();
-         message.reply("Remaining Health: " +health);
+  //BATTLE MECHANICS----------------------------------------------------------------------------------------------------
+   if (x===4&&pTurn===1&&ans===0){
+         message.reply("Remaining HP: " + health+"/100");
+         message.reply("attack|defend|health pot");
+         pTurn--;
+                       
+   }        
+  
+   if (message.content==="attack"&&pTurn===1){
+         dmgG=getRandomInt(stick)
+         enemyH=enemyH-dmgG;  
+         message.reply("Did "+dmgG+"dmg");
+         message.reply("Mage remaining health: " +enemyH);
         //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
          pTurn--;
-   }        
-         
+         ans++;
+   }      
          
    
    
