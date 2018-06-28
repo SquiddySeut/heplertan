@@ -59,7 +59,7 @@ client.on('message', message => {
       message.reply('pong');
 
    }
-}
+
   
    if (message.content==="resetH"){//heal
       health=100;
@@ -292,7 +292,7 @@ if (message.content==="squid"&&delet===1){//delete save process
 */
 
 
-
+   }
 });
 
 
