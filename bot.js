@@ -276,7 +276,7 @@ if (message.content==="squid"&&delet===1){//delete save process
          x++;
      ans=0;
      pTurn=1;
-     enemyH=50;
+     enemyH=20;
    }      
    if (message.content==="refuse"&&x===3){
          message.reply(stage03R);
@@ -290,7 +290,11 @@ if (message.content==="squid"&&delet===1){//delete save process
          ans++;
                        
    }        
-  
+   if (health<=0){
+     x=-1;
+     message.display(gameOver);
+     dmg=3;
+   }
    if (message.content==="attack"&&pTurn===1){
          dmgG=getRandomInt(dmg);
          enemyH=enemyH-dmgG;  
@@ -370,7 +374,7 @@ if (message.content==="squid"&&delet===1){//delete save process
     }
     if (message.content === ('resetSave')) {    //
        x=-1;
-       message.reply("Save reset!");
+       message.reply("game was reset!");
     }
     if (message.content === ('testX')) {    //
        x=-1;
