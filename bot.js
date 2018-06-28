@@ -289,11 +289,11 @@ if (message.content==="squid"&&delet===1){//delete save process
          message.reply("attack|defend|health pot");
          ans++;                   
    }        
-      // if (health<=0){//gameover combat
-     // x=-1;
-    // message.display(gameOver);
-   //  dmg=3;
-  //}
+      if (health<=0){//gameover combat
+       x=-1;
+     message.display(gameOver);
+     dmg=3;
+  }
   if (enemyH<=0){
     message.display("Enemy was defeated");
   }
@@ -306,7 +306,7 @@ if (message.content==="squid"&&delet===1){//delete save process
    // ans--;
   //  pTurn++;
 //  }
-   if (message.content==="attack"&&pTurn===1){
+   /*if (message.content==="attack"&&pTurn===1){
          dmgG=getRandomInt(dmg);
          enemyH=enemyH-dmgG;  
          message.reply("Did "+dmgG+"dmg");
@@ -365,7 +365,7 @@ if (message.content==="squid"&&delet===1){//delete save process
    
    
    
-   
+   */
     if (message.content==='commandHelp'){
        message.reply("My commands are:");
        message.channel.send("When will Jacob be on?");
