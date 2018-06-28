@@ -11,7 +11,8 @@ var stage01L="You walk inside, quietly. You hear some footsteps behind you and y
 var stage02="You wait outside and hear some sort of screaming from the inside. Shortly after, you see a man in a cloak run out.";
 var quest02="Do you (chase) after the man in the cloak, or (sneak) into the warehouse to peep on what was going on?";
 var stage02L="You chase after him, but you soon lose him in the dense forest. You have no idea where you are. Suddenly, a bright light appears behind you and you are engulfed in flames";
-var stage03="You sneak in quietly.";
+var stage03="You sneak in quietly. You see a woman being tied to a chair. You untie her. She tells you to follow her to her village and that it has been corrupted by evil mages";
+var quest03="Do you (follow her) or (refuse) her request?";
 
 //weapons
 var fist=3;
@@ -200,6 +201,7 @@ if (message.content==="squid"&&delet===1){//delete save process
          load=0;
         message.reply("New game starting. Type gameStart to continue");
       }
+  //GAME RESULTS--------------------------------------------------------------------------------------------------------
    if (message.content==="right"&&x===0){//stage0 results
          message.reply(stage01);
          message.reply(quest01);
@@ -226,8 +228,18 @@ if (message.content==="squid"&&delet===1){//delete save process
         //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
          x=0;
    }
-   
-   
+   if (message.content.startsWith==="chase"&&x===2){//stage2 results
+         message.reply(stage02L);
+         message.reply(gameOver);
+        //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
+         x=0;
+   }
+   if (message.content==="go inside"&&x===3){
+         message.reply(stage03);
+         message.reply(quest03);
+        //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
+         x=0;
+   }
          
          
          
