@@ -16,7 +16,7 @@ var quest03="Do you (follow her) or (refuse) her request?";
 var stage04="You follow her into the village. You see multiple people begging. They tell you to kill the mage. His head disappears.";
 var stage03R="You refuse her and leave the warehouse. In the forest, a blue gleaming light appears. You follow it. Suddenly, blood starts gushing out of your mouth.";
 var quest04="You challenge the mage. Before he accepts, the woman you rescued gave you a one-time-use charm. What does it do?";
-
+var pTurn;
 
 
 
@@ -258,7 +258,7 @@ if (message.content==="squid"&&delet===1){//delete save process
          message.reply(quest04);
         //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
          x++;
-     playerTurn=1;
+     pTurn=1;
    }      
    if (message.content==="refuse"&&x===3){
          message.reply(stage03R);
@@ -266,11 +266,11 @@ if (message.content==="squid"&&delet===1){//delete save process
         //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
          x=0;
    }      
-   if (x===4&&playerTurn===1){
+   if (x===4&&pTurn===1){
          message.reply();
          message.reply("Remaining Health: " +health);
         //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
-         
+         pTurn--;
    }        
          
          
