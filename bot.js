@@ -293,7 +293,7 @@ if (message.content==="squid"&&delet===1){//delete save process
 */
 
 
-   }
+   
 });
 
 
