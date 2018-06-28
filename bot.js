@@ -297,15 +297,15 @@ if (message.content==="squid"&&delet===1){//delete save process
   if (enemyH<=0){
     message.display("Enemy was defeated");
   }
-  if (pTurn===0&&ans===1){
-    message.reply("Turn: enemy");
-    damageTook=getRandomInt(20);
-    health=health-damageTook;
-    message.reply("Took "+damageTook+"dmg");
+  //if (pTurn===0&&ans===1){
+   // message.reply("Turn: enemy");
+  //  damageTook=getRandomInt(20);
+  //  health=health-damageTook;
+    //message.reply("Took "+damageTook+"dmg");
     
-    ans--;
-    pTurn++;
-  }
+   // ans--;
+  //  pTurn++;
+//  }
    if (message.content==="attack"&&pTurn===1){
          dmgG=getRandomInt(dmg);
          enemyH=enemyH-dmgG;  
