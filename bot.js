@@ -284,7 +284,7 @@ if (message.content==="squid"&&delet===1){//delete save process
          x=0;
    }      
   //BATTLE MECHANICS----------------------------------------------------------------------------------------------------
-   if (n===1&&ans===0&&enemyH>0){
+   if (pTurn===1&&ans===0&&enemyH>0){
          message.reply("Remaining HP: " + health+"/100");
          message.reply("attack|defend|health pot");
          ans++;                   
