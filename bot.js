@@ -221,6 +221,7 @@ if (message.content==="squid"&&delet===1){//delete save process
          message.reply(stage01);
          message.reply(quest01);
          x++;
+         dmg=3;
    }
    if (message.content==="left"&&x===0){
       message.reply(stage0L);
@@ -230,7 +231,7 @@ if (message.content==="squid"&&delet===1){//delete save process
    if (message.content==="stick"&&x===0){
       message.reply("You break a branch off of a tree");
       message.reply("Your max dmg is increased by two (5)");
-      dmg=stick
+      dmg=5
       message.reply(quest0);
    }
    if (message.content==="wait"&&x===1){//stage01 results
