@@ -273,7 +273,7 @@ if (message.content==="squid"&&delet===1){//delete save process
    if (x===4&&pTurn===1&&ans===0){
          message.reply("Remaining HP: " + health+"/100");
          message.reply("attack|defend|health pot");
-         
+         ans++;
                        
    }        
   
@@ -284,7 +284,7 @@ if (message.content==="squid"&&delet===1){//delete save process
          message.reply("Mage remaining health: " +enemyH);
         //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
          pTurn--;
-         ans++;
+         
    }      
          
    
