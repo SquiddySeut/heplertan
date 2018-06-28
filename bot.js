@@ -243,7 +243,7 @@ if (message.content==="squid"&&delet===1){//delete save process
    if (message.content==="stick"&&x===0){
       message.reply("You break a branch off of a tree");
       message.reply("Your max dmg is increased by two (5)");
-      dmg=5
+      dmg=5;
       message.reply(quest0);
    }
    if (message.content==="wait"&&x===1){//stage01 results
@@ -289,13 +289,13 @@ if (message.content==="squid"&&delet===1){//delete save process
          message.reply("attack|defend|health pot");
          ans++;                   
    }        
-   if (health<=0){//gameover combat
-     x=-1;
-     message.display(gameOver);
-     dmg=3;
-   }
+      // if (health<=0){//gameover combat
+     // x=-1;
+    // message.display(gameOver);
+   //  dmg=3;
+  //}
   if (enemyH<=0){
-    message.display("Enemy was defeated")
+    message.display("Enemy was defeated");
   }
    if (message.content==="attack"&&pTurn===1){
          dmgG=getRandomInt(dmg);
@@ -312,6 +312,11 @@ if (message.content==="squid"&&delet===1){//delete save process
            damageT=getRandomInt(20);
            health=health-damageT;
            message.reply("Took "+damageT+"dmg");
+            if (health<=0){                //NEW
+               x=-1;
+               message.display(gameOver);
+               dmg=3;
+           }
          }
          if (dmgG>=5&&dmgG<=8){
            message.reply("Turn: enemy");
@@ -323,6 +328,11 @@ if (message.content==="squid"&&delet===1){//delete save process
            enemyH=enemyH-dmgG;  
            message.reply("Did "+dmgG+"dmg");
            message.reply("Mage remaining health: " +enemyH);
+            if (health<=0){                //NEW
+               x=-1;
+               message.display(gameOver);
+               dmg=3;
+           }
          }
          if (dmgG===9){
            message.reply("Turn: enemy");
@@ -335,6 +345,11 @@ if (message.content==="squid"&&delet===1){//delete save process
            enemyH=enemyH-dmgG;  
            message.reply("Did "+dmgG+"dmg");
            message.reply("Mage remaining health: " +enemyH);
+            if (health<=0){                //NEW
+               x=-1;
+               message.display(gameOver);
+               dmg=3;
+           }
          }
            ans--;
    }           
