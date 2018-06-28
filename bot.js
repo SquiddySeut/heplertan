@@ -18,6 +18,12 @@ var stage03R="You refuse her and leave the warehouse. In the forest, a blue glea
 var quest04="You challenge the mage. Before he accepts, the woman you rescued gave you a one-time-use charm. What does it do?";
 
 
+
+
+
+//battles
+var battle=" challenges you!";
+var playerTurn;
 //weapons
 var fist=3;
 var stick=5;
@@ -252,14 +258,20 @@ if (message.content==="squid"&&delet===1){//delete save process
          message.reply(quest04);
         //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
          x++;
+     playerTurn=1;
    }      
    if (message.content==="refuse"&&x===3){
          message.reply(stage03R);
          message.reply(gameOver);
         //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
-         x++;
+         x=0;
    }      
+   if (x===4&&playerTurn===1){
+         message.reply();
+         message.reply("Remaining Health: " +health);
+        //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
          
+   }        
          
          
    
