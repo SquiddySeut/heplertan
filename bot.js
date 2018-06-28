@@ -284,7 +284,7 @@ if (message.content==="squid"&&delet===1){//delete save process
          x=0;
    }      
   //BATTLE MECHANICS----------------------------------------------------------------------------------------------------
-   if (n===1&&ans===0&&enemyH>0){
+   /*if (n===1&&ans===0&&enemyH>0){
          message.reply("Remaining HP: " + health+"/100");
          message.reply("attack|defend|health pot");
          ans++;                   
@@ -297,16 +297,17 @@ if (message.content==="squid"&&delet===1){//delete save process
   if (enemyH<=0){
     message.display("Enemy was defeated");
   }
-  //if (pTurn===0&&ans===1){
-   // message.reply("Turn: enemy");
-  //  damageTook=getRandomInt(20);
-  //  health=health-damageTook;
+  */
+  if (pTurn===0&&ans===1){
+    message.reply("Turn: enemy");
+    damageTook=getRandomInt(20);
+    health=health-damageTook;
     //message.reply("Took "+damageTook+"dmg");
     
-   // ans--;
-  //  pTurn++;
-//  }
-   /*if (message.content==="attack"&&pTurn===1){
+    ans--;
+    pTurn++;
+  }
+   if (message.content==="attack"&&pTurn===1){
          dmgG=getRandomInt(dmg);
          enemyH=enemyH-dmgG;  
          message.reply("Did "+dmgG+"dmg");
@@ -365,7 +366,7 @@ if (message.content==="squid"&&delet===1){//delete save process
    
    
    
-   */
+   
     if (message.content==='commandHelp'){
        message.reply("My commands are:");
        message.channel.send("When will Jacob be on?");
