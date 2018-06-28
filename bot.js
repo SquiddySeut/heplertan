@@ -300,6 +300,9 @@ if (message.content==="squid"&&delet===1){//delete save process
   if (pTurn===0&&ans===1){
     message.reply("Turn: enemy");
     damageT=damageT=getRandomInt(20);
+    health=health-damageT;
+    message.reply("Took "+damageT+"dmg");
+    
     ans--;
     pTurn++;
 
