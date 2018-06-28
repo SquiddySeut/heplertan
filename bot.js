@@ -296,6 +296,7 @@ if (message.content==="squid"&&delet===1){//delete save process
    }
   if (enemyH<=0){
     message.display("Enemy was defeated")
+  }
    if (message.content==="attack"&&pTurn===1){
          dmgG=getRandomInt(dmg);
          enemyH=enemyH-dmgG;  
