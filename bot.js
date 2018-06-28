@@ -81,6 +81,18 @@ client.on('message', message => {
       health=100;
       message.reply("Healed you back to 100 HP!");
    }
+   if (message.comtent==="k;stats"){
+     if (dmg===3){
+       weapon= "fists";
+     }
+     if (dmg===5){
+       weapon="stick";
+     }
+     
+      message.reply("Health: "+health);
+      message.reply("Weapon: "+weapon);
+      message.reply("Damage: "+dmg);
+   }
    
    if (message.content==="testH"){//test health
       //health=100;
