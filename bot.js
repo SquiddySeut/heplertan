@@ -287,14 +287,14 @@ if (message.content==="squid"&&delet===1){//delete save process
    }      
    if (message.content==="defend"&&pTurn===1){
          dmgG=getRandomInt(10);
-         if (dmgG>=0&&<=4){
+         if (dmgG>=0&&dmgG<=4){
            message.reply("Turn: enemy");
            message.reply("You failed to defend the attack");
            damageT=getRandomInt(20);
            health=health-damageT;
            message.reply("Took "+damageT+"dmg");
          }
-         if (dmgG>=5&&<=8){
+         if (dmgG>=5&&dmgG<=8){
            message.reply("Turn: enemy");
            message.reply("You successfully defended the attack");
            damageT=getRandomInt(10);
