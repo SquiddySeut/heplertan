@@ -284,7 +284,7 @@ if (message.content==="squid"&&delet===1){//delete save process
          x=0;
    }      
   //BATTLE MECHANICS----------------------------------------------------------------------------------------------------
-   if (/*==4&&*/n===1&&ans===0&&enemyH>0){
+   if (n===1&&ans===0&&enemyH>0){
          message.reply("Remaining HP: " + health+"/100");
          message.reply("attack|defend|health pot");
          ans++;                   
@@ -299,9 +299,9 @@ if (message.content==="squid"&&delet===1){//delete save process
   }
   if (pTurn===0&&ans===1){
     message.reply("Turn: enemy");
-    damageT=getRandomInt(20);
-    health=health-damageT;
-    message.reply("Took "+damageT+"dmg");
+    damageTook=getRandomInt(20);
+    health=health-damageTook;
+    message.reply("Took "+damageTook+"dmg");
     
     ans--;
     pTurn++;
@@ -318,9 +318,9 @@ if (message.content==="squid"&&delet===1){//delete save process
          if (dmgG>=0&&dmgG<=4){
            message.reply("Turn: enemy");
            message.reply("You failed to defend the attack");
-           damageT=getRandomInt(10);
-           health=health-damageT;
-           message.reply("Took "+damageT+"dmg");
+           damageTook=getRandomInt(10);
+           health=health-damageTook;
+           message.reply("Took "+damageTook+"dmg");
             if (health<=0){                //NEW
                x=-1;
                message.display(gameOver);
@@ -330,9 +330,9 @@ if (message.content==="squid"&&delet===1){//delete save process
          if (dmgG>=5&&dmgG<=8){
            message.reply("Turn: enemy");
            message.reply("You successfully defended the attack");
-           damageT=getRandomInt(5);
-           health=health-damageT;
-           message.reply("Took "+damageT+"dmg");
+           damageTook=getRandomInt(5);
+           health=health-damageTook;
+           message.reply("Took "+damageTook+"dmg");
            dmgG=getRandomInt(dmg);
            enemyH=enemyH-dmgG;  
            message.reply("Did "+dmgG+"dmg");
@@ -346,9 +346,9 @@ if (message.content==="squid"&&delet===1){//delete save process
          if (dmgG===9){
            message.reply("Turn: enemy");
            message.reply("Critcal hit CHANCE");
-           damageT=getRandomInt(2);
-           health=health-damageT;
-           message.reply("Took "+damageT+"dmg");
+           damageTook=getRandomInt(2);
+           health=health-damageTook;
+           message.reply("Took "+damageTook+"dmg");
            dmgG=getRandomInt(dmg);
            dmgG=dmgG*3;
            enemyH=enemyH-dmgG;  
