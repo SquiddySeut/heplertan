@@ -284,7 +284,7 @@ if (message.content==="squid"&&delet===1){//delete save process
          x=0;
    }      
   //BATTLE MECHANICS----------------------------------------------------------------------------------------------------
-   if (x===4&&pTurn===1&&ans===0&&enemyH>0){
+   if (/*==4&&*/n===1&&ans===0&&enemyH>0){
          message.reply("Remaining HP: " + health+"/100");
          message.reply("attack|defend|health pot");
          ans++;                   
@@ -297,6 +297,12 @@ if (message.content==="squid"&&delet===1){//delete save process
   if (enemyH<=0){
     message.display("Enemy was defeated");
   }
+  if (pTurn===0&&ans===1){
+    message.reply("Turn: enemy");
+    damageT=damageT=getRandomInt(20);
+    ans--;
+    pTurn++;
+
    if (message.content==="attack"&&pTurn===1){
          dmgG=getRandomInt(dmg);
          enemyH=enemyH-dmgG;  
@@ -309,7 +315,7 @@ if (message.content==="squid"&&delet===1){//delete save process
          if (dmgG>=0&&dmgG<=4){
            message.reply("Turn: enemy");
            message.reply("You failed to defend the attack");
-           damageT=getRandomInt(20);
+           damageT=getRandomInt(10;
            health=health-damageT;
            message.reply("Took "+damageT+"dmg");
             if (health<=0){                //NEW
@@ -321,7 +327,7 @@ if (message.content==="squid"&&delet===1){//delete save process
          if (dmgG>=5&&dmgG<=8){
            message.reply("Turn: enemy");
            message.reply("You successfully defended the attack");
-           damageT=getRandomInt(10);
+           damageT=getRandomInt(5);
            health=health-damageT;
            message.reply("Took "+damageT+"dmg");
            dmgG=getRandomInt(dmg);
@@ -337,7 +343,7 @@ if (message.content==="squid"&&delet===1){//delete save process
          if (dmgG===9){
            message.reply("Turn: enemy");
            message.reply("Critcal hit CHANCE");
-           damageT=getRandomInt(5);
+           damageT=getRandomInt(2;
            health=health-damageT;
            message.reply("Took "+damageT+"dmg");
            dmgG=getRandomInt(dmg);
