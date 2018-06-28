@@ -17,7 +17,7 @@ var stage04="You follow her into the village. You see multiple people begging. T
 var stage03R="You refuse her and leave the warehouse. In the forest, a blue gleaming light appears. You follow it. Suddenly, blood starts gushing out of your mouth.";
 var quest04="You challenge the mage. Before he accepts, the woman you rescued gave you a one-time-use charm. What does it do?";
 var pTurn;
-var enemyH
+var enemyH;
 var defX;
 var dmgG;
 var ans;
@@ -305,7 +305,7 @@ if (message.content==="squid"&&delet===1){//delete save process
     
     ans--;
     pTurn++;
-
+  }
    if (message.content==="attack"&&pTurn===1){
          dmgG=getRandomInt(dmg);
          enemyH=enemyH-dmgG;  
@@ -318,7 +318,7 @@ if (message.content==="squid"&&delet===1){//delete save process
          if (dmgG>=0&&dmgG<=4){
            message.reply("Turn: enemy");
            message.reply("You failed to defend the attack");
-           damageT=getRandomInt(10;
+           damageT=getRandomInt(10);
            health=health-damageT;
            message.reply("Took "+damageT+"dmg");
             if (health<=0){                //NEW
@@ -346,7 +346,7 @@ if (message.content==="squid"&&delet===1){//delete save process
          if (dmgG===9){
            message.reply("Turn: enemy");
            message.reply("Critcal hit CHANCE");
-           damageT=getRandomInt(2;
+           damageT=getRandomInt(2);
            health=health-damageT;
            message.reply("Took "+damageT+"dmg");
            dmgG=getRandomInt(dmg);
