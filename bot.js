@@ -234,7 +234,7 @@ if (message.content==="squid"&&delet===1){//delete save process
         //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
          x=0;
    }
-   if (message.content==="go inside"&&x===3){
+   if (message.content.startsWith==="sneak"&&x===3){
          message.reply(stage03);
          message.reply(quest03);
         //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
