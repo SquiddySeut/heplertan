@@ -13,6 +13,10 @@ var quest02="Do you (chase) after the man in the cloak, or (sneak) into the ware
 var stage02L="You chase after him, but you soon lose him in the dense forest. You have no idea where you are. Suddenly, a bright light appears behind you and you are engulfed in flames";
 var stage03="You sneak in quietly. You see a woman being tied to a chair. You untie her. She tells you to follow her to her village and that it has been corrupted by evil mages";
 var quest03="Do you (follow her) or (refuse) her request?";
+var stage04="You follow her into the village. You see multiple people begging. They tell you to kill the mage. His head disappears.";
+var stage03R="You refuse her and leave the warehouse. In the forest, a blue gleaming light appears. You follow it. Suddenly, blood starts gushing out of your mouth.";
+var quest04="You challenge the mage. Before he accepts, the woman you rescued gave you a one-time-use charm. What does it do?";
+
 
 //weapons
 var fist=3;
@@ -21,6 +25,9 @@ var sword=10;
 var spellbook=20;
 var weapon;
 var dmg;
+//armor
+var glove=1;
+var chainmail=5;
 
 const client = new Discord.Client();
 
@@ -240,8 +247,18 @@ if (message.content==="squid"&&delet===1){//delete save process
         //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
          x++;
    }
-         
-         
+   if (message.content==="follow her"&&x===3){//stage3 results
+         message.reply(stage04);
+         message.reply(quest04);
+        //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
+         x++;
+   }      
+   if (message.content==="refuse"&&x===3){
+         message.reply(stage03R);
+         message.reply(gameOver);
+        //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
+         x++;
+   }      
          
          
          
