@@ -21,6 +21,7 @@ var enemyH
 var defX;
 var dmgG;
 var ans;
+var damageTook;
 
 //battles
 var battle=" challenges you!";
@@ -229,6 +230,7 @@ if (message.content==="squid"&&delet===1){//delete save process
    if (message.content==="stick"&&x===0){
       message.reply("You break a branch off of a tree");
       message.reply("Your max dmg is increased by two (5)");
+      dmg=stick
       message.reply(quest0);
    }
    if (message.content==="wait"&&x===1){//stage01 results
@@ -266,7 +268,6 @@ if (message.content==="squid"&&delet===1){//delete save process
    if (message.content==="refuse"&&x===3){
          message.reply(stage03R);
          message.reply(gameOver);
-        //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
          x=0;
    }      
   //BATTLE MECHANICS----------------------------------------------------------------------------------------------------
@@ -278,15 +279,46 @@ if (message.content==="squid"&&delet===1){//delete save process
    }        
   
    if (message.content==="attack"&&pTurn===1){
-         dmgG=getRandomInt(stick)
+         dmgG=getRandomInt(dmg);
          enemyH=enemyH-dmgG;  
          message.reply("Did "+dmgG+"dmg");
          message.reply("Mage remaining health: " +enemyH);
-        //message.channel.send("https://i.ytimg.com/vi/Kr9rIx7MVvg/maxresdefault.jpg");
          pTurn--;
-         
    }      
-         
+   if (message.content==="defend"&&pTurn===1){
+         dmgG=getRandomInt(10);
+         if (dmgG>=0&&<=4){
+           message.reply("Turn: enemy");
+           message.reply("You failed to defend the attack");
+           damageT=getRandomInt(20);
+           health=health-damageT;
+           message.reply("Took "+damageT+"dmg");
+         }
+         if (dmgG>=5&&<=8){
+           message.reply("Turn: enemy");
+           message.reply("You successfully defended the attack");
+           damageT=getRandomInt(10);
+           health=health-damageT;
+           message.reply("Took "+damageT+"dmg");
+           dmgG=getRandomInt(dmg);
+           enemyH=enemyH-dmgG;  
+           message.reply("Did "+dmgG+"dmg");
+           message.reply("Mage remaining health: " +enemyH);
+         }
+         if (dmgG===9){
+           message.reply("Turn: enemy");
+           message.reply("Critcal hit CHANCE");
+           damageT=getRandomInt(5);
+           health=health-damageT;
+           message.reply("Took "+damageT+"dmg");
+           dmgG=getRandomInt(dmg);
+           dmgG=dmgG*3;
+           enemyH=enemyH-dmgG;  
+           message.reply("Did "+dmgG+"dmg");
+           message.reply("Mage remaining health: " +enemyH);
+         }
+           ans--;
+   }           
    
    
    
