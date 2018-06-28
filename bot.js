@@ -294,10 +294,11 @@ if (message.content==="squid"&&delet===1){//delete save process
      message.display(gameOver);
      dmg=3;
   }
+  */
   if (enemyH<=0){
     message.display("Enemy was defeated");
   }
-  */
+  
   if (pTurn===0&&ans===1){
     message.reply("Turn: enemy");
     damageTook=getRandomInt(20);
