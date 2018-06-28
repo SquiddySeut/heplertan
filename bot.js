@@ -284,17 +284,18 @@ if (message.content==="squid"&&delet===1){//delete save process
          x=0;
    }      
   //BATTLE MECHANICS----------------------------------------------------------------------------------------------------
-   if (x===4&&pTurn===1&&ans===0){
+   if (x===4&&pTurn===1&&ans===0&&enemyH>0){
          message.reply("Remaining HP: " + health+"/100");
          message.reply("attack|defend|health pot");
-         ans++;
-                       
+         ans++;                   
    }        
-   if (health<=0){
+   if (health<=0){//gameover combat
      x=-1;
      message.display(gameOver);
      dmg=3;
    }
+  if (enemyH<=0){
+    message.display("Enemy was defeated")
    if (message.content==="attack"&&pTurn===1){
          dmgG=getRandomInt(dmg);
          enemyH=enemyH-dmgG;  
