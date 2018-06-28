@@ -11,7 +11,7 @@ var stage01L="You walk inside, quietly. You hear some footsteps behind you and y
 var stage02="You wait outside and hear some sort of screaming from the inside. Shortly after, you see a man in a cloak run out.";
 var quest02="Do you (chase) after the man in the cloak, or (sneak) into the warehouse to peep on what was going on?";
 var stage02L="You chase after him, but you soon lose him in the dense forest. You have no idea where you are. Suddenly, a bright light appears behind you and you are engulfed in flames";
-var stage03="You sneak in quietly.
+var stage03="You sneak in quietly.";
 
 //weapons
 var fist=3;
