@@ -75,6 +75,9 @@ client.on('message', message => {
       message.reply('pong');
 
    }
+  if (message.content==="PING"){
+    message.reply("PONNNNNNNNGGGGGGGGGG");
+  }
 
   
    if (message.content==="resetH"){//heal
