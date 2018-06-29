@@ -295,6 +295,9 @@ if (message.content==="squid"&&delet===1){//delete save process
      message.display(gameOver);
      dmg=3;
   }
+  if (message.content==="displayDMG"){
+    message.reply("Your max dmg is currently "+dmg);
+  }
   
   if (enemyH<=0){
     message.display("Enemy was defeated");
