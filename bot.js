@@ -296,7 +296,7 @@ if (message.content==="squid"&&delet===1){//delete save process
      dmg=3;
   }
   if (message.content==="displayDMG"){
-    message.reply("Your max dmg is currently "+dmg);
+    message.reply("Your dmg is currently "+dmg);
   }
   
   if (enemyH<=0){
@@ -314,6 +314,7 @@ if (message.content==="squid"&&delet===1){//delete save process
   }
    if (message.content==="attack"&&pTurn===1){
          dmgG=getRandomInt(dmg);
+         dmgG=dmgG+dmg;
          enemyH=enemyH-dmgG;  
          message.reply("Did "+dmgG+"dmg");
          message.reply("Mage remaining health: " +enemyH);
