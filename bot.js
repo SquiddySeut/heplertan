@@ -27,8 +27,8 @@ var damageTook;
 var battle=" challenges you!";
 var playerTurn;
 //weapons
-var fist=3;
-var stick=5;
+var fist=5;
+var stick=7;
 var sword=10;
 var spellbook=20;
 var weapon;
@@ -82,10 +82,10 @@ client.on('message', message => {
       message.reply("Healed you back to 100 HP!");
    }
    if (message.content==="k;stats"){
-     if (dmg===3){
+     if (dmg===5){
        weapon= "fists";
      }
-     if (dmg===5){
+     if (dmg===7){
        weapon="stick";
      }
      
@@ -243,7 +243,7 @@ if (message.content==="squid"&&delet===1){//delete save process
    if (message.content==="stick"&&x===0){
       message.reply("You break a branch off of a tree");
       message.reply("Your max dmg is increased by two (5)");
-      dmg=5;
+      dmg=7;
       message.reply(quest0);
    }
    if (message.content==="wait"&&x===1){//stage01 results
