@@ -242,7 +242,7 @@ if (message.content==="squid"&&delet===1){//delete save process
    }
    if (message.content==="stick"&&x===0){
       message.reply("You break a branch off of a tree");
-      message.reply("Your max dmg is increased by two (5)");
+      message.reply("Your max dmg is increased by two (7)");
       dmg=7;
       message.reply(quest0);
    }
