@@ -381,9 +381,9 @@ if (message.content==="squid"&&delet===1){//delete save process
        message.channel.send("When will Jacob be on?");
        message.channel.send(" and ResetSave");
     }
-    if (message.content.startsWith("im")) {
-    message.channel.send("Hey Dad-bot, please shut up!");
-    }
+    //if (message.content.startsWith("im")) {
+   // message.channel.send("Hey Dad-bot, please shut up!");
+  //  }
     if (message.content.startsWith("No you're not,")) {
     message.channel.send("Dad Bot, you need to actually stfu");
     }
