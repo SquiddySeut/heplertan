@@ -390,12 +390,12 @@ if (message.content==="squid"&&delet===1){//delete save process
     if (message.content.startsWith("69")) {
     message.channel.send("nice");
     }
-    if (message.content.startsWith("Hi ")) {
-    message.channel.send("Dad Bot kys");
-    }
-    if (message.content.startsWith("Alright ")) {
-    message.channel.send("no u");
-    }
+    //if (message.content.startsWith("Hi ")) {
+   // message.channel.send("Dad Bot kys");
+    //}
+   // if (message.content.startsWith("Alright ")) {
+  //  message.channel.send("no u");
+ //   }
     if (message.content.startsWith("When will Jacob be on")) {
     message.reply("He is usually online from 2pm-7pm");   
     }
