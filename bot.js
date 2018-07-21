@@ -78,8 +78,22 @@ client.on('message', message => {
   if (message.content==="PING"){
     message.reply("PONNNNNNNNGGGGGGGGGG");
   }
-
-  
+  if(message.content==="Play despacito"){
+    message.reply("I got you fam");
+    message.channel.send("~>play https://soundcloud.com/luisfonsiofficial/despacito");
+  }
+  if(message.content==="play despacito"){
+    message.reply("I got you fam");
+    message.channel.send("~>play https://soundcloud.com/luisfonsiofficial/despacito");
+  }
+  if(message.content==="Play Despacito"){
+    message.reply("I got you fam");
+    message.channel.send("~>play https://soundcloud.com/luisfonsiofficial/despacito");
+  }
+  if(message.content==="play Despacito"){
+    message.reply("I got you fam");
+    message.channel.send("~>play https://soundcloud.com/luisfonsiofficial/despacito");
+  }
    if (message.content==="resetH"){//heal
       health=100;
       message.reply("Healed you back to 100 HP!");
