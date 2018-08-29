@@ -111,10 +111,10 @@ client.on('message', message => {
       message.reply("Damage: "+dmg);
    }
    if (message.content==="ddlctest"){//TEST MY DDLC GAME HERE HERE HERE HERE HERE HERE
-      message.channel.send"@SquiddySeut#4830, you have a volunteer";
+      message.channel.send("@SquiddySeut#4830, you have a volunteer");
    }
    if (message.content==="Ddlctest"){//TEST MY DDLC GAME HERE HERE HERE HERE HERE HERE
-      message.channel.send"@SquiddySeut#4830, you have a volunteer";
+      message.channel.send("@SquiddySeut#4830, you have a volunteer");
    }
    if (message.content==="testH"){//test health
       //health=100;
