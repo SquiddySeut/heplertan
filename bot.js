@@ -79,10 +79,10 @@ client.on('message', message => {
     message.reply("PONNNNNNNNGGGGGGGGGG");
   }
   if (message.content==="This is so sad alexa pay respects"){
-    message.reply("F");
+    message.channel.send("F");
   }
   if (message.content==="this is so sad alexa pay respects"){
-    message.reply("F");
+    message.channel.send("F");
   }
   if(message.content==="Play despacito"){
     message.reply("I got you fam");
