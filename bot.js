@@ -78,6 +78,9 @@ client.on('message', message => {
   if (message.content==="PING"){
     message.reply("PONNNNNNNNGGGGGGGGGG");
   }
+  if (message.content==="お前は大ゲイがありますから、死んでくれ"){
+    message.reply("いいえ、貴様!");
+  }
   if (message.content==="This is so sad alexa pay respects"){
     message.channel.send("F");
   }
