@@ -78,6 +78,12 @@ client.on('message', message => {
   if (message.content==="PING"){
     message.reply("PONNNNNNNNGGGGGGGGGG");
   }
+  if (message.content==="This is so sad alexa pay respects"){
+    message.reply("F");
+  }
+  if (message.content==="this is so sad alexa pay respects"){
+    message.reply("F");
+  }
   if(message.content==="Play despacito"){
     message.reply("I got you fam");
     message.channel.send("~>play https://soundcloud.com/luisfonsiofficial/despacito");
