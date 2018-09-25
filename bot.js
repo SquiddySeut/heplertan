@@ -177,7 +177,7 @@ if (message.content==="squid"&&delet===1){//delete save process
       
    }
    if (damage===1){
-      health=health-Math.floor(Math.random()*10)+1;
+      health=health-Math.floor(Math.random()*10)+weapon; //NEWNWENWENWNENWENWANEJHJKCBJKSBHCJNBDCHGLHSGBHA
       message.reply(health);
    }
    if (message.content==="squid"&&save===1){//save procces
