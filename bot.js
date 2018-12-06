@@ -177,7 +177,7 @@ if (message.content==="squid"&&delet===1){//delete save process
       
    }
    if (damage===1){
-      health=health-Math.floor(Math.random()*10)+weapon; //NEWNWENWENWNENWENWANEJHJKCBJKSBHCJNBDCHGLHSGBHA
+      health=health-Math.floor(Math.random()*(weapon*2))+weapon; //NEWNEWNEWNEWNEWNEWNEWNEWNEWNEW2
       message.reply(health);
    }
    if (message.content==="squid"&&save===1){//save procces
@@ -237,23 +237,23 @@ if (message.content==="squid"&&delet===1){//delete save process
    if (message.content==="squid"&&load===1){
          x=squid;
          load=0;
-         message.reply("load confirmed");
+         message.reply("load confirmed, type gameStart to start a game");
       } if (message.content==="hugh"&&load===1){
          x=hugh;
          load=0;
-         message.reply("load confirmed");
+         message.reply("load confirmed, type gameStart to start a game");
       } if (message.content==="mafu"&&load===1){
          x=mafu;
          x=0;
-         message.reply("load confirmed");
+         message.reply("load confirmed, type gameStart to start a game");
       } if (message.content==="kono"&&load===1){
          x=kono;
          load=0;
-         message.reply("load confirmed");
+         message.reply("load confirmed, type gameStart to start a game");
       } if (message.content==="save5"&&load===1){
          x=save5;
          load=0;
-         message.reply("load confirmed");
+         message.reply("load confirmed, type gameStart to start a game");
       } if (message.content==="new") {
          x=0;
          load=0;
