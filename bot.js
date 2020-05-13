@@ -28,18 +28,18 @@ client.on('message', message => {
         x=getRandomInt(2);
         if(x===0){
             message.channel.send('I am flattered that you want to see me...');
-            message.channel.send('i.imgur.com/UzUBr0B.png');
+            message.channel.send('https://i.imgur.com/UzUBr0B.png');
             message.channel.send('How do I look?');
             message.channel.send(':KoasTemptation:');
         }
         else if(x===1){
             message.channel.send('I am flattered that you want to see me...');
-            message.channel.send('i.imgur.com/fjukAXR.png');
+            message.channel.send('https://i.imgur.com/fjukAXR.png');
             message.channel.send('I feel really happy today!');
         }
         else {
             message.channel.send('I am flattered that you want to see me...');
-            message.channel.send('i.imgur.com/lS0292f.jpg');
+            message.channel.send('https://i.imgur.com/lS0292f.jpg');
             message.channel.send('But I am more curious about you!');
         }
     }
