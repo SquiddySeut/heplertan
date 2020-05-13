@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
 var x = 0;
 
 client.on('ready', () => {
@@ -22,11 +24,25 @@ client.on('message', message => {
         message.channel.send('You can have all sorts of naughty conversations here');
         message.channel.send('Do not talk about anything illegal or contentious, even I am a stickler for that');
     }
-    if (message.content === 'pinyourfirstmessage') {
-        channel.fetchMessages({limit: 1}).then(result => {
-            message.pin();
-        });
+    if (message.content === 'Koakuma, I want to see you') {
+        x=getRandomInt(2);
+        if(x===0){
+            message.channel.send('I am flattered that you want to see me...');
+            message.channel.send('i.imgur.com/UzUBr0B.png');
+            message.channel.send('How do I look?');
+            message.channel.send(':KoasTemptation:');
+        }
+        else if(x===1){
+            message.channel.send('I am flattered that you want to see me...');
+            message.channel.send('i.imgur.com/fjukAXR.png');
+            message.channel.send('I feel really happy today!);
+        }
+        else {
+            message.channel.send('I am flattered that you want to see me...');
+            message.channel.send('i.imgur.com/lS0292f.jpg');
+            message.channel.send('But I am more curious about you!');
     }
+    
     //if (message.content.startsWith("im")) {
    // message.channel.send("Hey Dad-bot, please shut up!");
   //  }
