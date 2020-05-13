@@ -22,6 +22,11 @@ client.on('message', message => {
         message.channel.send('You can have all sorts of naughty conversations here');
         message.channel.send('Do not talk about anything illegal or contentious, even I am a stickler for that');
     }
+    if (message.content === 'pinyourfirstmessage') {
+        channel.fetchMessages({limit: 1}).then(result => {
+            .then(message.pin());
+        });
+    }
     //if (message.content.startsWith("im")) {
    // message.channel.send("Hey Dad-bot, please shut up!");
   //  }
