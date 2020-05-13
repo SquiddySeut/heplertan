@@ -9,9 +9,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'psst') {
-      	message.reply('*Hello... Would you like access to a wonderful place?*');
-        message.reply('*If so, you have come to the right place...*');
-        message.reply('React to this message if you want access to a totally not shady, but lewd area back behind her house...');
+      	message('*Hello... Would you like access to a wonderful place?*');
+        message('*If so, you have come to the right place...*');
+        message('React to this message if you want access to a totally not shady, but lewd area back behind her house...');
     }
     //if (message.content.startsWith("im")) {
    // message.channel.send("Hey Dad-bot, please shut up!");
