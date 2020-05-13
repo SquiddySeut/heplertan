@@ -41,6 +41,7 @@ client.on('message', message => {
             message.channel.send('I am flattered that you want to see me...');
             message.channel.send('i.imgur.com/lS0292f.jpg');
             message.channel.send('But I am more curious about you!');
+        }
     }
     
     //if (message.content.startsWith("im")) {
