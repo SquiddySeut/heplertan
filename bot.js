@@ -35,7 +35,7 @@ client.on('message', message => {
         else if(x===1){
             message.channel.send('I am flattered that you want to see me...');
             message.channel.send('i.imgur.com/fjukAXR.png');
-            message.channel.send('I feel really happy today!);
+            message.channel.send('I feel really happy today!');
         }
         else {
             message.channel.send('I am flattered that you want to see me...');
