@@ -30,7 +30,7 @@ client.on('message', message => {
             message.channel.send('I am flattered that you want to see me...');
             message.channel.send('https://i.imgur.com/UzUBr0B.png');
             message.channel.send('How do I look?');
-            message.channel.send(':KoasTemptation:');
+            //message.channel.send(':KoasTemptation:');
         }
         else if(x===1){
             message.channel.send('I am flattered that you want to see me...');
